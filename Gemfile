@@ -5,12 +5,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.2'
 # Use sqlite3 as the database for Active Record
 
-group :development, :test do
-  gem 'sqlite3'
-end
+gem "sqlite3", group: :development
 
 group :production do
-  gem 'pg'
+  gem "pg"
+  gem "rails_12factor"
 end
 
 # Use SCSS for stylesheets
